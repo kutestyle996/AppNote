@@ -354,10 +354,6 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
 
         if (parent.getId() == R.id.spinnerDays) {
             switch (position) {
-                case 0:
-                    _day = null;
-                    break;
-
                 case 1:
                     _day = Utility.addDate(0);
                     break;
@@ -379,10 +375,6 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
             }
         } else if (parent.getId() == R.id.spinnerHours) {
             switch (position) {
-                case 0:
-                    _hour = null;
-                    break;
-
                 case 1:
                     _hour = getString(R.string.text_hour8);
                     break;
