@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MyNote</string>
+    <string name="text_no_notes">No notes</string>
+    <string name="text_untitle">Untitle</string>
+    <string name="text_no_content">No content</string>
+    <string name="text_permission_denied">Permission denied to read your External storage</string>
+    <string name="text_day">Day</string>
+    <string name="text_time">Time</string>
+    <string name="text_hour8">08:00</string>
+    <string name="text_hour12">12:00</string>
+    <string name="text_hour16">16:00</string>
+    <string name="text_hour20">20:00</string>
+    <string name="text_camera">Camera</string>
+    <string name="text_gallery">Gallery</string>
+    <string name="text_insert_picture">Insert picture</string>
+    <string name="text_share">Share</string>
+
+
+
+    <string name="text_dialog_delete">Do you want to delete?</string>
+    <string name="text_dialog_new_note">Do you want to create new note?</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="text_alarm_title">You are having a note now</string>
+    <string name="text_alarm_content">Click to show detail</string>
+    <string name="text_filed_create_date">mCreateDate</string>
+    <string name="text_null_time">You must setup your time</string>
+
+</resources>
