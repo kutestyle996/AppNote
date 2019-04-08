@@ -9,7 +9,7 @@ import android.graphics.BitmapFactory;
 import android.support.v4.app.NotificationCompat;
 
 import com.example.appnote.R;
-import com.example.appnote.data.model.Constants;
+import com.example.appnote.utils.Constants;
 import com.example.appnote.data.model.NoteAction;
 import com.example.appnote.detail.DetailActivity;
 

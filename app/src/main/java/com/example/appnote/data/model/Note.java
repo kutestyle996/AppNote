@@ -65,7 +65,6 @@ public class Note extends RealmObject{
         this.mHour = hour;
     }
 
-
     public String getTitle() {
         return mTitle;
     }

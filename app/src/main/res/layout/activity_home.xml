@@ -30,7 +30,6 @@
 
         <ImageView
             android:id="@+id/button_new_note"
-            android:background="?android:attr/selectableItemBackgroundBorderless"
             android:layout_width="@dimen/dp_32"
             android:layout_height="@dimen/dp_32"
             android:layout_gravity="center_vertical|right"

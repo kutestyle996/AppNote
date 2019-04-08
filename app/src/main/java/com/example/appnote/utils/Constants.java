@@ -1,4 +1,4 @@
-package com.example.appnote.data.model;
+package com.example.appnote.utils;
 
 public interface Constants {
     String days[] = {"Day", "Today", "Tomorrow", "After Tomorrow", "Other.."};

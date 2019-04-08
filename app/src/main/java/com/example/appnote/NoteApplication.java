@@ -1,4 +1,4 @@
-package com.example.appnote.application;
+package com.example.appnote;
 
 import android.app.Application;
 

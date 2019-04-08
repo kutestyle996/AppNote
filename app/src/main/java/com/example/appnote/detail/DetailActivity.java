@@ -37,7 +37,7 @@ import android.widget.Toast;
 import com.example.appnote.R;
 import com.example.appnote.adapter.ImageAdapter;
 import com.example.appnote.data.local.NoteDataSource;
-import com.example.appnote.data.model.Constants;
+import com.example.appnote.utils.Constants;
 import com.example.appnote.data.model.Note;
 import com.example.appnote.data.model.NoteAction;
 import com.example.appnote.receiver.AlarmReceiver;
@@ -305,17 +305,37 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
             mButtonAlarm.setVisibility(View.VISIBLE);
         }
         if (mNotes.size() == 1) {
-            mButtonNext.setAlpha(60);
-            mButtonPrevious.setAlpha(60);
+            setButtonNextEnable(false);
+            setButtonPreviousEnable(false);
         } else if (mPosition == mNotes.size() - 1) {
-            mButtonPrevious.setAlpha(255);
-            mButtonNext.setAlpha(60);
+            setButtonPreviousEnable(true);
+            setButtonNextEnable(false);
         } else if (mPosition == 0) {
-            mButtonNext.setAlpha(255);
-            mButtonPrevious.setAlpha(60);
+            setButtonNextEnable(true);
+            setButtonPreviousEnable(false);
         } else {
-            mButtonNext.setAlpha(255);
+            setButtonNextEnable(true);
+            setButtonPreviousEnable(true);
+        }
+    }
+
+    public void setButtonPreviousEnable(boolean isEnable) {
+        if (isEnable) {
             mButtonPrevious.setAlpha(255);
+            mButtonPrevious.setEnabled(true);
+        } else {
+            mButtonPrevious.setAlpha(60);
+            mButtonPrevious.setEnabled(false);
+        }
+    }
+
+    public void setButtonNextEnable(boolean isEnable) {
+        if (isEnable) {
+            mButtonNext.setAlpha(255);
+            mButtonNext.setEnabled(true);
+        } else {
+            mButtonNext.setAlpha(60);
+            mButtonNext.setEnabled(false);
         }
     }
 
@@ -550,7 +570,7 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
                             "pic_" + String.valueOf(System.currentTimeMillis()) + ".jpg"));
                     intent.putExtra(MediaStore.EXTRA_OUTPUT, mUri);
                     startActivityForResult(intent, REQUEST_CAMERA);
-                } else if (items[i].equals(R.string.text_gallery)) {
+                } else if (items[i].equals(getString(R.string.text_gallery))) {
                     Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                     intent.setType(Constants.Type.TYPE_IMAGE);
                     startActivityForResult(intent, SELECT_FILE);

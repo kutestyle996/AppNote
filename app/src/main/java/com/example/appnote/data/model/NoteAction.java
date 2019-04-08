@@ -1,7 +1,6 @@
 package com.example.appnote.data.model;
 
 import android.support.annotation.StringDef;
-
 import static com.example.appnote.data.model.NoteAction.BACK;
 import static com.example.appnote.data.model.NoteAction.DELETE;
 import static com.example.appnote.data.model.NoteAction.EDIT_NOTE;

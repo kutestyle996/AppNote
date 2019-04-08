@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import com.example.appnote.R;
 import com.example.appnote.adapter.NoteAdapter;
 import com.example.appnote.data.local.NoteDataSource;
-import com.example.appnote.data.model.Constants;
+import com.example.appnote.utils.Constants;
 import com.example.appnote.data.model.Note;
 import com.example.appnote.data.model.NoteAction;
 import com.example.appnote.detail.DetailActivity;
